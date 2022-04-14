@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
 import android.preference.PreferenceManager;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Base64;
 import android.util.Log;
 
@@ -100,7 +101,7 @@ public class AppLockImpl<T extends AppLockActivity> extends AppLock implements L
     /**
      * Static method that allows to get back the current static Instance of {@link AppLockImpl}
      *
-     * @param context       The current context of the {@link Activity}
+     * @param context       The current context of the {@link AppCompatActivity}
      * @param activityClass The activity extending {@link AppLockActivity}
      * @return The instance.
      */

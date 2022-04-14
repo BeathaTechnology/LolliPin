@@ -5,8 +5,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.content.LocalBroadcastManager;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.omadahealth.lollipin.lib.interfaces.LifeCycleInterface;
 import com.github.omadahealth.lollipin.lib.managers.AppLockActivity;
@@ -17,7 +17,7 @@ import com.github.omadahealth.lollipin.lib.managers.AppLockActivity;
  * Then to enable PinCode blocking, you must call
  * {@link com.github.omadahealth.lollipin.lib.managers.LockManager#enableAppLock(android.content.Context, Class)}
  */
-public class PinFragmentActivity extends FragmentActivity {
+public class PinFragmentActivity extends AppCompatActivity {
     private static LifeCycleInterface mLifeCycleListener;
     private final BroadcastReceiver mPinCancelledReceiver;
 

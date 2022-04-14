@@ -5,7 +5,8 @@ import android.content.Intent;
 import android.hardware.fingerprint.FingerprintManager;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.content.LocalBroadcastManager;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
@@ -27,7 +28,7 @@ import java.util.List;
  * Created by stoyan and olivier on 1/13/15.
  * The activity that appears when the password needs to be set or has to be asked.
  * Call this activity in normal or singleTop mode (not singleTask or singleInstance, it does not work
- * with {@link android.app.Activity#startActivityForResult(android.content.Intent, int)}).
+ * with {@link AppCompatActivity#startActivityForResult(android.content.Intent, int)}).
  */
 public abstract class AppLockActivity extends PinActivity implements KeyboardButtonClickedListener, View.OnClickListener, FingerprintUiHelper.Callback {
 

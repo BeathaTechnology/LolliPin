@@ -26,9 +26,9 @@ dependencies {
     api 'com.github.omadahealth.typefaceview:typefaceview:1.5.0@aar' //TypefaceTextView
 
     //Compat
-    api 'com.android.support:support-v4:26.0.2'
-    api 'com.android.support:appcompat-v7:26.0.2'
-    api "com.android.support:support-v13:26.0.2"
+    api 'androidx.legacy:legacy-support-v4:1.0.0'
+    api 'androidx.appcompat:appcompat:1.0.0'
+    api 'androidx.legacy:legacy-support-v13:1.0.0'
 }
 //repositories {
 //    maven {
